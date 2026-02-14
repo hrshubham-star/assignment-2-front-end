@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Event Manager</h1>
+
+    <form id="eventForm">
+        <input type="text" id="eventTitle" placeholder="Event Title" required><br><br>
+
+        <input type="date" id="eventDate" required><br><br>
+
+        <select id="eventCategory">
+            <option value="workshop">Workshop</option>
+            <option value="conference">Conference</option>
+            <option value="meeting">Meeting</option>
+        </select><br><br>
+
+        <textarea id="eventDescription" placeholder="Event Description"></textarea><br><br>
+
+        <button type="submit">Add Event</button>
+    </form>
+
+    <br>
+
+    <button id="clearAllBtn">Clear All</button>
+
+    <div id="eventContainer">
+        <div class="empty-state">No events yet. Add your first event!</div>
+    </div>
+
+    <!-- JS ALWAYS at bottom -->
+    <script src="script.js"></script>
+</body>
+</html>
